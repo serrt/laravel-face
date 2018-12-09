@@ -1,17 +1,10 @@
 {
     "name": "serrt/laravel-face",
     "description": "face++",
-    "keywords": [
-        "laravel",
-        "face++"
-    ],
-    "type": "library",
-    "license": "mit",
+    "keywords": ["laravel", "face++"],
+    "license": "MIT",
     "authors": [
-        {
-            "name": "serrt",
-            "email": "1163816051@qq.com"
-        }
+        {"name": "serrt", "email": "1163816051@qq.com"}
     ],
     "minimum-stability": "dev",
     "require": {

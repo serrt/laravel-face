@@ -2,7 +2,6 @@
 
 namespace Serrt\LaravelFace;
 
-
 class FaceService
 {
     public function init()
