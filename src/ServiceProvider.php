@@ -9,14 +9,14 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/face.php' => config_path('face.php'),
+            __DIR__.'/../config/face.php' => config_path('face.php'),
         ]);
     }
 
     public function register()
     {
-        $this->app->singleton('face', function () {
-            return new FaceService();
+        $this->app->singleton('face.plus', function () {
+            return new FacePlusService($this->app['config']['face.plus']);
         });
     }
 }
