@@ -1,0 +1,41 @@
+{
+    "name": "serrt/laravel-face",
+    "description": "face++",
+    "keywords": [
+        "laravel",
+        "face++"
+    ],
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "serrt",
+            "email": "1163816051@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7",
+        "laravel/framework": ">5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Serrt\\LaravelFace\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Serrt\\LaravelFace\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Serrt\\LaravelFace\\ServiceProvider"
+            ],
+            "aliases": {
+                "Face": "Serrt\\LaravelFace\\Facade"
+            }
+        }
+    }
+}
